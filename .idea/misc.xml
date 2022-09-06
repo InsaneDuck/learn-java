@@ -3,12 +3,22 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/CookieDemo" />
+    <file type="web" url="file://$PROJECT_DIR$/GroceryWithJDBC" />
+    <file type="web" url="file://$PROJECT_DIR$/MVCCartDemo" />
+    <file type="web" url="file://$PROJECT_DIR$/MVCCartSingleController" />
+    <file type="web" url="file://$PROJECT_DIR$/MVCHome" />
+    <file type="web" url="file://$PROJECT_DIR$/MVCInsertOrder" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/CookieDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/GroceryWithJDBC/pom.xml" />
+        <option value="$PROJECT_DIR$/MVCCartDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/MVCCartSingleController/pom.xml" />
+        <option value="$PROJECT_DIR$/MVCHome/pom.xml" />
+        <option value="$PROJECT_DIR$/MVCInsertOrder/pom.xml" />
       </list>
     </option>
   </component>
