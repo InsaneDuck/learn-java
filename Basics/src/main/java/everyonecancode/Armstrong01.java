@@ -11,7 +11,7 @@ public class Armstrong01
     public static String generateArmstrongNums(int start, int limit)
     {
         //ADD YOUR CODE HERE
-    	String result="";
+    	StringBuilder result= new StringBuilder();
     	if(start<=0 || limit<=0)
 		{
 			return "-1";
@@ -27,7 +27,7 @@ public class Armstrong01
         	{
         		if(isArmstrong(i))
         		{
-        			result=result+","+i;
+        			result.append(",").append(i);
         		}
         	}
     	}
@@ -47,11 +47,11 @@ public class Armstrong01
     {
         //ADD YOUR CODE HERE
     	int sum=0;
-    	int digits[]=getDigits(n);
-    	for(int i=0;i<digits.length;i++)
-    	{
-    		sum=sum+power(digits[i],digits.length);
-    	}
+    	int[] digits =getDigits(n);
+		for (int digit : digits)
+		{
+			sum = sum + power(digit, digits.length);
+		}
     	return sum;
     }
     public static int[] getDigits(int n)

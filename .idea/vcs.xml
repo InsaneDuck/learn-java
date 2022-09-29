@@ -2,11 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/CookieDemo" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/GroceryWithJDBC" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/MVCCartDemo" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/MVCCartSingleController" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/MVCHome" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/MVCInsertOrder" vcs="Git" />
   </component>
 </project>
