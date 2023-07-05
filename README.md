@@ -1,0 +1,5 @@
+# Basics
+- JVM
+- JRE
+- JDK
+- 
