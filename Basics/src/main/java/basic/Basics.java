@@ -4,6 +4,7 @@ import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.stream.IntStream;
 
@@ -23,6 +24,67 @@ public class Basics {
         Node<String> head = new Node<>("foo",node7);
 
         Node.printAllNode(head);
+    }
+    public int[] twoSum(int[] nums, int target) {
+        for(int i=0;i<nums.length-1;i++)
+        {
+            for(int j=i+1;j<nums.length-1;j++)
+            {
+                if(nums[i]+nums[j]==target)
+                {
+                    return new int[]{nums[i], nums[j]};
+                }
+            }
+        }
+        String s = "";
+        return nums;
+    }
+
+    public int lengthOfLongestSubstring(String s) {
+        int n = s.length();
+        int maxLength = 0;
+        int[] charIndex = new int[128];
+        Arrays.fill(charIndex, -1);
+        int left = 0;
+
+        for (int right = 0; right < n; right++) {
+            if (charIndex[s.charAt(right)] >= left) {
+                left = charIndex[s.charAt(right)] + 1;
+            }
+            charIndex[s.charAt(right)] = right;
+            maxLength = Math.max(maxLength, right - left + 1);
+        }
+
+        return maxLength;
+    }
+    public static String run(int N, int M) {
+        /*
+         * Write your code below; return type and arguments should be according to the problem's requirements
+         */
+
+
+        String sequence = "";
+        int length = M - N + 1;
+        for(int i = N; i<length+1 ;i++)
+        {
+            if(i%15==0)
+            {
+                sequence = sequence + ",FizzBuzz";
+            }
+            else if(i%3==0)
+            {
+                sequence = sequence + ",Fizz";
+            }
+            else if(i%5==0)
+            {
+                sequence = sequence +",Buzz";
+            }
+            else{
+                sequence = sequence+","+i;
+            }
+        }
+
+        return sequence.substring(1);
     }
 
 
